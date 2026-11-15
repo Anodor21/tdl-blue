@@ -1,6 +1,6 @@
-# Daftar Tugas (Persona 3 Reload Style)
+# To Do List
 
-To-Do List sederhana dengan visual terinspirasi UI **Persona 3 Reload**: navy dalam `#001233`, biru laut cerah `#16cffb`, merah `#e60024`, panel miring (skew) dengan border tegas dan shadow komik.
+To-Do List sederhana dengan visual terinspirasi UI: navy dalam `#001233`, biru laut cerah `#16cffb`, merah `#e60024`, panel miring (skew) dengan border tegas dan shadow komik.
 
 ## Fitur
 
@@ -15,17 +15,3 @@ To-Do List sederhana dengan visual terinspirasi UI **Persona 3 Reload**: navy da
 - Empty state: pesan ramah saat daftar masih kosong
 - Aksesibel: tombol teks `<button>` asli (Enter/Space), label form visible, kontras WCAG AA, menghormati `prefers-reduced-motion`
 - Responsive di layar < 600px: satu kolom, pemisah disembunyikan, skew dinolkan agar panel tidak pecah
-
-## Jalankan
-
-Buka `index.html` di browser. Font (Montserrat, Permanent Marker) dimuat dari Google Fonts.
-
-## Struktur
-
-```
-index.html      struktur halaman (layout dua kolom: panel statistik + zona misi, dipisah garis diagonal)
-style.css       seluruh desain Persona 3 Reload via CSS custom properties
-script.js       logika todo + localStorage + statistik + tanggal + progress + efek suara
-assets/         favicon.png
-sfx/            navigation.wav, close-menu.mp3, menu-utama.mp3
-```
