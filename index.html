@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar Tugas</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,800;0,900;1,800;1,900&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="layout">
+    <!-- Kolom kiri: statistik, tanggal, progress -->
+    <aside class="panel-kiri">
+      <div class="stat-card">
+        <div class="stat-grid">
+          <div class="stat-item">
+            <span class="stat-angka" id="stat-total">0</span>
+            <span class="stat-label">Total</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-angka" id="stat-selesai">0</span>
+            <span class="stat-label">Selesai</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-angka" id="stat-belum">0</span>
+            <span class="stat-label">Belum</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tanggal" id="tanggal"></div>
+
+      <div class="progress">
+        <span class="progress-label">Progress</span>
+        <div class="progress-track">
+          <div class="progress-fill" id="progress-fill"></div>
+        </div>
+        <span class="progress-angka" id="progress-angka">0%</span>
+      </div>
+    </aside>
+
+    <!-- Garis diagonal pemisah antar kolom -->
+    <div class="pemisah"></div>
+
+    <!-- Kolom kanan: zona misi -->
+    <section class="panel-kanan">
+      <h1 class="zona-judul">Misi Hari Ini</h1>
+
+      <form id="todo-form" class="todo-form">
+        <label for="todo-input" class="todo-label">Tugas Baru</label>
+        <div class="form-row">
+          <input
+            type="text"
+            id="todo-input"
+            class="todo-input"
+            placeholder="Ketik tugas baru..."
+            required
+          >
+          <button type="submit" class="tambah">Tambah</button>
+        </div>
+      </form>
+
+      <ul id="todo-list" class="todo-list"></ul>
+
+      <p class="empty-state" id="empty-state" hidden>Belum ada tugas. Tambah yang pertama di atas.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
