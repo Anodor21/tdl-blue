@@ -1,6 +1,6 @@
 # To Do List
 
-To-Do List sederhana dengan visual terinspirasi UI: navy dalam `#001233`, biru laut cerah `#16cffb`, merah `#e60024`, panel miring (skew) dengan border tegas dan shadow komik.
+To-Do List sederhana dengan visual UI: navy dalam `#001233`, biru laut cerah `#16cffb`, merah `#e60024`, panel miring (skew) dengan border tegas dan shadow komik.
 
 ## Fitur
 
